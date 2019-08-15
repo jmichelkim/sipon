@@ -21,6 +21,14 @@ function calculaHoras(event) {
     let horaTotalSemAlmoco = somaHora(horaAntesAlmoco, horaDepoisAlmoco);
     let horaTotalComAlmoco = subtraiHora(inputHora4.value, inputHora1.value);
 
+    document.getElementById("horaAntesAlmoco").innerHTML = horaAntesAlmoco;
+    document.getElementById("horaAlmoco").innerHTML = horaAlmoco;
+    document.getElementById("horaDepoisAlmoco").innerHTML = horaDepoisAlmoco;
+    document.getElementById("horaTotalSemAlmoco").innerHTML = horaTotalSemAlmoco;
+    document.getElementById("horaTotalComAlmoco").innerHTML = horaTotalComAlmoco;
+
+    document.getElementById('mensagem').style.display = 'inline';
+
     console.log(`Antes do almoço: ${horaAntesAlmoco}`);
     console.log(`Almoço: ${horaAlmoco}`);
     console.log(`Depois do almoço: ${horaDepoisAlmoco}`);

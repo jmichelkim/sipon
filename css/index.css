@@ -1,0 +1,12 @@
+button,
+.card {
+
+    opacity: 0.85
+}
+
+
+#mensagem {
+
+    display: none;
+    text-align: center;
+}
