@@ -28,22 +28,22 @@
             <div class="col-sm">
                 <div class="form-group">
                     <label for="hora1">Entrada</label>
-                    <input id="hora1" class="form-control" value="12:10" required autofocus />
+                    <input id="hora1" class="form-control" value="10:00" required autofocus />
                 </div>
             </div>
 
             <div class="col-sm">
                 <div class="form-group">
-                    <label for="hora2">Saída</label>
-                    <input id="hora2" class="form-control" value="14:15" />
+                    <label for="hora2">Saída para Almoço</label>
+                    <input id="hora2" class="form-control" value="13:00" />
                 </div>
             </div>
 
 
             <div class="col-sm">
                 <div class="form-group">
-                    <label for="hora3">Entrada</label>
-                    <input id="hora3" class="form-control" value="15:30" />
+                    <label for="hora3">Volta do Almoço</label>
+                    <input id="hora3" class="form-control" value="13:30" />
                 </div>
             </div>
 
@@ -51,7 +51,7 @@
             <div class="col-sm">
                 <div class="form-group">
                     <label for="hora4">Saída</label>
-                    <input id="hora4" class="form-control" value="19:25" />
+                    <input id="hora4" class="form-control" value="16:15" />
                 </div>
             </div>
 
@@ -116,14 +116,52 @@
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
+        <div class="row">
+            <div class="col-sm">         
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Horário Cumprido</div>
+                    <div class="card-body">
+                    <h5 class="card-title" id="horaCumprida">Warning card title</h5>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">         
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Saldo Horas</div>
+                    <div class="card-body">
+                    <h5 class="card-title" id="horaSaldo">Warning card title</h5>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">         
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Horário ideal de Saída</div>
+                    <div class="card-body">
+                    <h5 class="card-title" id="horaCumprida">Warning card title</h5>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">         
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                </div>
+            </div>
+            <div class="col-sm">         
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                </div>
+            </div>
+        </div>
     </div>
-
-
+    <p>* Sua jornada de trabalho é considerada completa, ao realizar 05:45 de Horas Total sem almoço.</p>
+    <p>* Horário mínimo de almoço é de 30 minutos.</p>
+    <p>* O Almoço não deve ultrapassar de 4 horas.</p>
+    <p>* A hora extra não deve ultrapassar de 2 horas por dia, apenas em casos extremos.</p>
     <script>console.log('Arquivo index.html carregado.');</script>
     <script src="js/index.js"></script>
-    <!-- <script src="js/index-2.js"></script> -->
-
+    <script src="js/calculaHoras.js"></script>
 
 </body>
 
