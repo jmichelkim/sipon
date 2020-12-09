@@ -20,7 +20,9 @@ function calculaHoras(event) {
     let horaDepoisAlmoco = subtraiHora(inputHora4.value, inputHora3.value);
     let horaTotalSemAlmoco = somaHora(horaAntesAlmoco, horaDepoisAlmoco);
     let horaTotalComAlmoco = subtraiHora(inputHora4.value, inputHora1.value);
-    // let horaIdealSaida = somaHora(horaAntesAlmoco, )
+    let horaSaidaIdeal = somaHora(inputHora1.value, '06:15');
+    let horaSaidaAjustadaInicial = somaHora(inputHora1.value, '05:45');
+    let horaSaidaAjustadaFinal = somaHora(horaSaidaAjustadaInicial, horaAlmoco);
 
     if(horaTotalSemAlmoco == '05:45'){
         let horaSaldo = '00:00';
@@ -46,6 +48,8 @@ function calculaHoras(event) {
     document.getElementById("horaTotalSemAlmoco").innerHTML = horaTotalSemAlmoco;
     document.getElementById("horaTotalComAlmoco").innerHTML = horaTotalComAlmoco;
     document.getElementById("horaCumprida").innerHTML = horaCumprida;
+    document.getElementById("horaSaidaIdeal").innerHTML = horaSaidaIdeal;
+    document.getElementById("horaSaidaAjustadaFinal").innerHTML = horaSaidaAjustadaFinal;
 
     document.getElementById('mensagem').style.display = 'inline';
 
