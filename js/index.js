@@ -52,7 +52,19 @@ function calculaHoras(event) {
     document.getElementById("horaSaidaAjustadaFinal").innerHTML = horaSaidaAjustadaFinal;
 
     document.getElementById('mensagem').style.display = 'inline';
-
+    
     // Modelo de como exibir a variável junto com o console.log.
     // console.log(`Total Saldo de Horas: ${horaSaldo}`); 
+
+    setCookie(1,2,3,4);
+}
+
+function setCookie(inputHora1, inputHora2, inputHora3, inputHora4){
+    var data = new Date();
+    // document.cookie = "data = " + data;
+    document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
+    var x = document.cookie;
+    console.log(document.cookie);
+    console.log('Cookie Criado.')
+
 }
